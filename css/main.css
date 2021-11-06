@@ -1,53 +1,144 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
-  background-color: rgb(1, 12, 24);
+  background-color: rgb(255, 255, 255);
+  font-family: monospace;
+  overflow-x: hidden;
 }
 .container{
- width: 100%;
- max-width: 1300px;
- margin: 0 auto;
- padding: 0px 20px;
-
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  
 }
 .bag {
- display: flex;
- align-items: center;
- padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #0087CB;
+  border-radius: 10px;
 }
-.heading{
- text-align: center;
- font-family: cursive;
- color: rgb(174, 230, 163);
- text-transform: uppercase;
- padding-top: 100px;
- padding-bottom: 50px;
+.bag1{
+  background-color: red;
 }
-.heading:hover{
-  cursor: pointer;
-  color: blue;
-  opacity: 0.5;
+.bag2{
+  background-color: #4867AA;
+}
+.bag3{
+  background-color: #C32AA3;
+}
+.bag4{
+  background-color: #0077B7;
+}
+.nurbek-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.text{
+  width: 100%;
+  max-width: 450px;
+  padding-left: 20px;
+}
+.nurbek-img__text{
+  width: 100%;
+  max-width: 320px;
+}
+.img{
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  display: block;
+  flex-shrink: 0;
+  
+}
+.heading{ 
+  font-size: 20px;
+  
+  color: rgb(44, 42, 42);
+  opacity: 0.8;
+  margin: 0%;
+  margin-bottom: 8px;
+  
+}
+.uznekistan{
+  max-width: 130px;
+  border-radius: 100px;
+  text-align: center;
+  border: 2px solid blueviolet;
+  padding: 5px;
+  margin: 5px 0;
+}
+.paragrid{
+  margin: 1%;
+}
+.uzbekistan_link{
+  text-decoration: blueviolet;
 }
 .list{
-  display: flex;
-  flex-wrap: wrap;
- list-style: none;
- padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .item{
-  margin-left: 20px;
+  width: 100%;
+  max-width:600px;
+  margin-bottom: 20px;
+  
+}
+.list__heading{
+  font-size: 12px;
+  margin: 0;
 }
 .link{
-  font-family: cursive;
- text-decoration: none;
- margin-left: 20px;
- color: wheat;
-}
-.link:hover{
-  
-  color: rgb(138, 165, 214);
+  font-size: 12px;
+  font-family: inherit;
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
 }
 .span{
   display:block;
-  width: 500px;
-  height: 3px;
-  background-color: darkgray;
+  width: 60px;
+  height: 1px;
+  background-color: rgb(92, 85, 85);
+  opacity: 0.3;
+  transform: rotate(90deg);
+}
+.svg{
+  color: #ffffff;
+}
+.svg-border{
+  border-right:10px solid rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 430px){
+  .img{
+    margin-bottom: 30px  
+  };
+  .headin{
+   text-align: center;
+   margin-bottom: 100px;
+  }
+  .nurbek-img{
+    flex-direction: column;
+    text-align: center;
+  }
+  .uznekistan{
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px  
+  };
+  .salom{
+ text-align: left;
+  }
+ 
 }
