@@ -70,13 +70,16 @@ body{
   text-align: center;
   border: 2px solid blueviolet;
   padding: 5px;
-  margin: 5px 0;
+  margin: 7px 0;
 }
 .paragrid{
-  margin: 1%;
+  margin: 1px;
+  padding-left: 8px;
 }
 .uzbekistan_link{
   text-decoration: blueviolet;
+  display: flex;
+  align-items: center;
 }
 .list{
   list-style: none;
